@@ -805,14 +805,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://g1_description/meshes/tool_connector_cyl_x.stl"/>
+        <mesh filename="package://g1_description/meshes/tool_connector_cyl_x.STL"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://g1_description/meshes/tool_connector_cyl_x.stl"/>
+        <mesh filename="package://g1_description/meshes/tool_connector_cyl_x.STL"/>
       </geometry>
     </collision>
   </link>
@@ -1025,14 +1025,14 @@
     <visual>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://g1_description/meshes/tool_connector_cyl_x.stl"/>
+        <mesh filename="package://g1_description/meshes/tool_connector_cyl_x.STL"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
       <origin xyz="0 0 0" rpy="0 0 0"/>
       <geometry>
-        <mesh filename="package://g1_description/meshes/tool_connector_cyl_x.stl"/>
+        <mesh filename="package://g1_description/meshes/tool_connector_cyl_x.STL"/>
       </geometry>
     </collision>
   </link>
