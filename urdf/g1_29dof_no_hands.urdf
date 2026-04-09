@@ -791,6 +791,37 @@
       </geometry>
     </collision>
   </link>
+  <joint name="left_tool_connector_joint" type="fixed">
+    <origin xyz="0.0415 0.003 0" rpy="0 0 0"/>
+    <parent link="left_wrist_yaw_link"/>
+    <child link="left_tool_connector_link"/>
+  </joint>
+  <link name="left_tool_connector_link">
+    <inertial>
+      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.041" length="0.022"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    <collision>
+      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.041" length="0.022"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="left_tool_attach_joint" type="fixed">
+    <origin xyz="0.022 0 0" rpy="0 0 0"/>
+    <parent link="left_tool_connector_link"/>
+    <child link="left_tool_attach"/>
+  </joint>
+  <link name="left_tool_attach"/>
   <link name="right_shoulder_pitch_link">
     <inertial>
       <origin xyz="0 -0.035892 -0.011628" rpy="0 0 0"/>
@@ -980,4 +1011,35 @@
       </geometry>
     </collision>
   </link>
+  <joint name="right_tool_connector_joint" type="fixed">
+    <origin xyz="0.0415 -0.003 0" rpy="0 0 0"/>
+    <parent link="right_wrist_yaw_link"/>
+    <child link="right_tool_connector_link"/>
+  </joint>
+  <link name="right_tool_connector_link">
+    <inertial>
+      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <mass value="0.01"/>
+      <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
+    </inertial>
+    <visual>
+      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.041" length="0.022"/>
+      </geometry>
+      <material name="white"/>
+    </visual>
+    <collision>
+      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <geometry>
+        <cylinder radius="0.041" length="0.022"/>
+      </geometry>
+    </collision>
+  </link>
+  <joint name="right_tool_attach_joint" type="fixed">
+    <origin xyz="0.022 0 0" rpy="0 0 0"/>
+    <parent link="right_tool_connector_link"/>
+    <child link="right_tool_attach"/>
+  </joint>
+  <link name="right_tool_attach"/>
 </robot>
