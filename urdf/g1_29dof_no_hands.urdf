@@ -792,7 +792,7 @@
     </collision>
   </link>
   <joint name="left_tool_connector_joint" type="fixed">
-    <origin xyz="0.0415 0.003 0" rpy="0 1.570796327 0"/>
+    <origin xyz="0.0415 0.003 0" rpy="0 0 0"/>
     <parent link="left_wrist_yaw_link"/>
     <child link="left_tool_connector_link"/>
   </joint>
@@ -803,14 +803,14 @@
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
     </inertial>
     <visual>
-      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <origin xyz="0.011 0 0" rpy="0 1.5707963267948966 0"/>
       <geometry>
         <cylinder radius="0.0205" length="0.022"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
-      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <origin xyz="0.011 0 0" rpy="0 1.5707963267948966 0"/>
       <geometry>
         <cylinder radius="0.0205" length="0.022"/>
       </geometry>
@@ -1012,7 +1012,7 @@
     </collision>
   </link>
   <joint name="right_tool_connector_joint" type="fixed">
-    <origin xyz="0.0415 -0.003 0" rpy="0 1.570796327 0"/>
+    <origin xyz="0.0415 -0.003 0" rpy="0 0 0"/>
     <parent link="right_wrist_yaw_link"/>
     <child link="right_tool_connector_link"/>
   </joint>
@@ -1023,14 +1023,14 @@
       <inertia ixx="1e-6" ixy="0" ixz="0" iyy="1e-6" iyz="0" izz="1e-6"/>
     </inertial>
     <visual>
-      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <origin xyz="0.011 0 0" rpy="0 1.5707963267948966 0"/>
       <geometry>
         <cylinder radius="0.0205" length="0.022"/>
       </geometry>
       <material name="white"/>
     </visual>
     <collision>
-      <origin xyz="0.011 0 0" rpy="0 0 0"/>
+      <origin xyz="0.011 0 0" rpy="0 1.5707963267948966 0"/>
       <geometry>
         <cylinder radius="0.0205" length="0.022"/>
       </geometry>
